@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+}
+
+:root{
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+}
+
+body{
+    background: var(--almostWhite);
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 25px 5vw;
+    color: var(--mediumGray);
+    overflow: visible;
+    position: relative;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    overflow: visible;
+    gap: 30px;
+}
+
+.nav-item{
+    color: var(--mediumGray);
+    font-size: 15px;
+}
+
+.nav-item:hover{
+    color: var(--almostBlack);
+    transition: 1s;
+}
+
+.menu-item{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+.dropdown{
+    overflow: visible;
+}
+
+.dropdown-menu{
+    margin-top: 15px;
+    margin-right: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.one{
+    position: absolute;
+    left: 11%;
+}
+
+.two{
+    position: absolute;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* register */
+
+.register{
+    background-color: var(--almostBlack);
+    border: 1.1px solid var(--almostBlack);
+    color: var(--almostWhite);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.register:hover{
+    cursor: pointer;
+    background-color: var(--almostWhite);
+    color: var(--almostBlack);
+    transition: 1s;
+}
+
+/* main */
+
+main{
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    gap: 5rem;
+    padding: 15px 5vw 5vw 5vw;
+}
+
+.texts{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4rem 0 0 0;
+}
+
+.main-img{
+    width: 45%;
+    height: 100%;
+}
+
+.mob-pic{
+    display: none;
+}
+
+h1{
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    color: var(--almostBlack);
+    padding-right: 6rem;
+}
+
+.main-para{
+    line-height: 27px;
+    font-size: 17px;
+    color: var(--mediumGray);
+    padding-right: 7rem;
+}
+
+.learn-more{
+    align-self: flex-start;
+    background-color: var(--almostBlack);
+    border: none;
+    border-radius: 10px;
+    border: 1.4px solid var(--almostBlack);
+    color: var(--almostWhite);
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.learn-more:hover{
+    border: 1.4px solid var(--almostBlack);
+    background-color: var(--almostWhite);
+    color: var(--almostBlack);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.logos{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* sxebistvsac gamosadegi blur efeqti */
+.overlay {
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    
+}

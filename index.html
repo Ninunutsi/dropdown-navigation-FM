@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Component</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="overlay" id="overlay"></div>
+        <img src="./assets/images/logo.svg" alt="" class="logo">
+        <div class="hamburger"><img src="./assets/images/icon-menu.svg" alt="" id="hamburger">
+        </div>
+        <div class="header-menu" id="menu">
+            <nav>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-item nav-item">Features <span class="arr-up"><img src="./assets/images/icon-arrow-down.svg" alt=""></span></a>
+                    <div class="dropdown-menu hidden one">
+                        <span class="menu-item"><img src="./assets/images/icon-todo.svg" alt="">Todo List</span>
+                        <span class="menu-item"><img src="./assets/images/icon-calendar.svg" alt="">Calendar</span>
+                        <span class="menu-item"><img src="./assets/images/icon-reminders.svg" alt="">Reminders</span>
+                        <span class="menu-item"><img src="./assets/images/icon-planning.svg" alt="">Planning</span>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-item nav-item">Company <span class="arr-up"><img src="./assets/images/icon-arrow-down.svg" alt=""></span></a>
+                    <div class="dropdown-menu hidden two">
+                        <span class="menu-item">History</span>
+                        <span class="menu-item">Our Team</span>
+                        <span class="menu-item">Blog</span>
+                    </div>
+                </div>
+                <a href="#" class="nav-item">Careers</a>
+                <a href="#" class="nav-item">About</a>
+            </nav>
+            <div class="btns">
+                <a href="#" class="nav-item login">Login</a>
+                <button class="register">Register</button>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="texts">
+            <h1>Make remote work</h1>
+            <p class="main-para">Get your team in sync, no matter your location.
+                Streamline processes, create team rituals, and watch
+                productivity soar.
+            </p>
+            <button class="learn-more">Learn more</button>
+            <div class="logos">
+                <img src="./assets/images/client-databiz.svg" alt="">
+                <img src="./assets/images/client-audiophile.svg" alt="">
+                <img src="./assets/images/client-meet.svg" alt="">
+                <img src="./assets/images/client-maker.svg" alt="">
+            </div>
+        </section>
+        <img src="./assets/images/image-hero-desktop.png" alt="" class="main-img">
+        <img src="./assets/images/image-hero-mobile.png" alt="" class="mob-pic">
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
